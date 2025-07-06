@@ -1,0 +1,29 @@
+{
+  "name": "Mohith Kumar - UI/UX Portfolio",
+  "short_name": "Mohith Portfolio",
+  "description": "Passionate User Experience Designer, turning your ideas into pixel-perfect realities.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#000000",
+  "theme_color": "#a3e635",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en",
+  "categories": ["design", "portfolio", "business"],
+  "icons": [
+    {
+      "src": "/logoM-favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/profile-photo.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ]
+} 
