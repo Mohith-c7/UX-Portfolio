@@ -59,8 +59,8 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <head>
-        <link rel="icon" href="/logoM-favicon.svg" type="image/svg+xml" />
-        <link rel="alternate icon" href="/logoM-favicon.svg" />
+        <link rel="icon" href="/logoM-favicon.png" type="image/png" />
+        <link rel="alternate icon" href="/logoM-favicon.png" />
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#a3e635" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
