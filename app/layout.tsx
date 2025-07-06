@@ -10,6 +10,7 @@ const manrope = Manrope({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://mohithux.vercel.app'),
   title: "Mohith Kumar - UI/UX Portfolio",
   description:
     "Passionate User Experience Designer, turning your ideas into pixel-perfect realities. Specializing in web design, branding, and user experience.",
@@ -29,7 +30,7 @@ export const metadata: Metadata = {
     description: "Passionate User Experience Designer, turning your ideas into pixel-perfect realities.",
     type: "website",
     locale: "en_US",
-    url: "https://mohithkumar.vercel.app",
+    url: "https://mohithux.vercel.app",
     siteName: "Mohith Kumar Portfolio",
     images: [
       {
@@ -69,7 +70,7 @@ export default function RootLayout({
         <meta name="apple-mobile-web-app-title" content="Mohith Portfolio" />
         <meta name="msapplication-TileColor" content="#a3e635" />
         <meta name="msapplication-config" content="/browserconfig.xml" />
-        <link rel="canonical" href="https://mohithkumar.vercel.app" />
+        <link rel="canonical" href="https://mohithux.vercel.app" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       </head>

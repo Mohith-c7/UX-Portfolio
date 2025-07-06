@@ -358,7 +358,7 @@ export default function Portfolio() {
                 category: "Informational UI",
                 date: "13/05/2025",
                 desc: "Website Design",
-                image: "/vitapweb.png?height=320&width=480",
+                image: "/vitapweb.png",
                 link: "#",
               },
               {
@@ -366,7 +366,7 @@ export default function Portfolio() {
                 category: "Neomorphism",
                 date: "28/12/2024",
                 desc: "Website & App Design",
-                image: "/avy.png?height=320&width=480",
+                image: "/avy.png",
                 link: "#",
               },
             ].map((project, index) => (
