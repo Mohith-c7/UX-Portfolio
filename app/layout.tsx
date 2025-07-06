@@ -21,9 +21,9 @@ export const metadata: Metadata = {
   robots: "index, follow",
   manifest: '/manifest.json',
   icons: {
-    icon: '/logoM-favicon.svg',
-    shortcut: '/logoM-favicon.svg',
-    apple: '/logoM-favicon.svg',
+    icon: '/logoM-favicon.png',
+    shortcut: '/logoM-favicon.png',
+    apple: '/logoM-favicon.png',
   },
   openGraph: {
     title: "Mohith Kumar - UI/UX Portfolio",
