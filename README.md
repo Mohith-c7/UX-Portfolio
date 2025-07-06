@@ -60,10 +60,6 @@ A modern, responsive portfolio website built with Next.js, TypeScript, and Tailw
 - **Framer Motion**: Animation library
 - **Lucide React**: Icon library
 
-### UI Components
-- **Radix UI**: Accessible component primitives
-- **Shadcn/ui**: Modern component library
-- **Custom Components**: Aurora backgrounds, glass navigation, modals
 
 ### Development Tools
 - **ESLint**: Code linting
@@ -94,60 +90,6 @@ portfolio-website/
 └── styles/               # Additional styles
 ```
 
-## 🚀 Getting Started
-
-### Prerequisites
-- Node.js 18+ 
-- pnpm (recommended) or npm
-
-### Installation
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/yourusername/portfolio-website.git
-   cd portfolio-website
-   ```
-
-2. **Install dependencies**
-   ```bash
-   pnpm install
-   # or
-   npm install
-   ```
-
-3. **Run development server**
-   ```bash
-   pnpm dev
-   # or
-   npm run dev
-   ```
-
-4. **Open your browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
-
-### Build for Production
-
-```bash
-# Build the application
-pnpm build
-
-# Start production server
-pnpm start
-```
-
-## 🎨 Customization
-
-### Colors & Branding
-The color scheme uses Tailwind's lime color palette:
-- Primary: `#a3e635` (lime-400)
-- Secondary: `#84cc16` (lime-500)
-- Background: `#ffffff` (white) / `#000000` (black)
-
-### Content Updates
-1. **Profile Information**: Update `app/page.tsx` with your details
-2. **Projects**: Modify the projects array in the portfolio section
-3. **Social Links**: Update LinkedIn, GitHub, and Behance URLs
-4. **Images**: Replace placeholder images in the `public/` folder
 
 ### Styling
 - **Global Styles**: Modify `app/globals.css` for custom CSS
@@ -162,29 +104,6 @@ The website is configured as a Progressive Web App with:
 - **Responsive Design**: Works on all screen sizes
 - **Fast Loading**: Optimized for performance
 
-## 🔍 SEO Optimization
-
-- **Meta Tags**: Comprehensive meta information
-- **Open Graph**: Social media sharing optimization
-- **Twitter Cards**: Twitter sharing optimization
-- **Sitemap**: XML sitemap for search engines
-- **Robots.txt**: Search engine crawling instructions
-- **Structured Data**: JSON-LD schema markup (can be added)
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-1. Connect your GitHub repository to Vercel
-2. Vercel will automatically detect Next.js and deploy
-3. Custom domain can be added in Vercel dashboard
-
-### Other Platforms
-- **Netlify**: Compatible with Next.js static export
-- **AWS Amplify**: Full Next.js support
-- **Railway**: Easy deployment with GitHub integration
-
-## 📊 Performance
-
 ### Lighthouse Scores
 - **Performance**: 95+
 - **Accessibility**: 100
@@ -197,14 +116,6 @@ The website is configured as a Progressive Web App with:
 - **Lazy Loading**: Images and components
 - **Minification**: CSS and JavaScript
 - **Caching**: Static asset caching
-
-## 🤝 Contributing
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📄 License
 
@@ -228,4 +139,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**Built with ❤️ by Mohith Kumar** 
+**Built with ❤️ by Mohith** 
