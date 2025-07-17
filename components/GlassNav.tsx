@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import LogoM from "./LogoM"
 import Link from "next/link"
@@ -14,15 +14,28 @@ function getScrollProgress() {
 export default function GlassNav() {
   const [minimized, setMinimized] = useState(false);
   const [progress, setProgress] = useState(0);
+  const ticking = useRef(false); // <-- Move useRef here
 
   useEffect(() => {
-    const handleScroll = () => {
-      const prog = getScrollProgress();
-      setProgress(prog);
+    const updateProgress = () => {
+      setProgress(getScrollProgress());
       setMinimized(window.scrollY > 64);
+      ticking.current = false;
+    };
+    const handleScroll = () => {
+      if (!ticking.current) {
+        window.requestAnimationFrame(updateProgress);
+        ticking.current = true;
+      }
     };
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    window.addEventListener("resize", updateProgress);
+    window.addEventListener("load", updateProgress);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener("resize", updateProgress);
+      window.removeEventListener("load", updateProgress);
+    };
   }, []);
 
   // Apple-style glassmorphism
@@ -124,8 +137,8 @@ export default function GlassNav() {
               transition={{ duration: 0.18 }}
               style={{ pointerEvents: minimized ? "none" : "auto" }}
             >
-              <a href="#portfolio" className="text-[14px] md:text-[16px] font-semibold text-gray-700 hover:text-black transition-colors">Projects</a>
-              <a href="#resume" className="text-[14px] md:text-[16px] font-semibold text-gray-700 hover:text-black transition-colors">Resume</a>
+              <a href="#portfolio" className="text-[14px] md:text-[16px] font-semibold text-gray-700 hover:text-black transition-colors focus:outline-none">Projects</a>
+              <a href="/Mohith_Resume_UX.pdf" download className="text-[14px] md:text-[16px] font-semibold text-gray-700 hover:text-black transition-colors focus:outline-none">Resume</a>
               <a 
                 href="#footer" 
                 onClick={(e) => {

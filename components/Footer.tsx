@@ -47,8 +47,8 @@ export default function Footer() {
               <div className="w-2 h-2 bg-lime-400 rounded-full"></div>
               <span className="font-medium text-[18px]">Mohith</span>
             </div>
-            <div className="flex items-center space-x-8">
-              <div className="text-gray-400 text-[15px]">© 2025 Mohith Kumar. All rights reserved.</div>
+            <div className="flex items-center justify-center w-full md:justify-end md:w-auto md:space-x-8">
+              <div className="text-gray-400 text-[15px] text-center w-full">© 2025 Mohith Kumar. All rights reserved.</div>
             </div>
           </div>
         </div>
