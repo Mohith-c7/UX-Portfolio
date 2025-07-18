@@ -73,6 +73,28 @@ export default function RootLayout({
         <link rel="canonical" href="https://mohithux.vercel.app" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        {/* JSON-LD Structured Data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Person",
+              "name": "Mohith Kumar",
+              "url": "https://mohithux.vercel.app",
+              "image": "https://mohithux.vercel.app/profile-photo.png",
+              "sameAs": [
+                "mailto:iammohithkumar@gmail.com"
+              ],
+              "jobTitle": "UI/UX Designer",
+              "worksFor": {
+                "@type": "Organization",
+                "name": "Freelance"
+              },
+              "description": "Passionate User Experience Designer, turning your ideas into pixel-perfect realities. Specializing in web design, branding, and user experience."
+            })
+          }}
+        />
       </head>
       <body className={manrope.className}>
         {children}
