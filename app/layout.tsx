@@ -73,7 +73,7 @@ export default function RootLayout({
         <link rel="canonical" href="https://mohithux.vercel.app" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <meta name="google-site-verification" content="YtsttUeRdfAlluRTx" />
+        <meta name="google-site-verification" content="YtsttUeRdfAlIuRTxanRPUF_DxmfPZ_weQwuw-z-b_o" />
         {/* JSON-LD Structured Data for SEO */}
         <script
           type="application/ld+json"
