@@ -1,8 +1,9 @@
+# *
 User-agent: *
 Allow: /
 
-# Sitemap
-Sitemap: https://mohithux.vercel.app/sitemap.xml
+# Host
+Host: https://mohithux.vercel.app
 
-# Crawl-delay
-Crawl-delay: 1 
+# Sitemaps
+Sitemap: https://mohithux.vercel.app/sitemap.xml
